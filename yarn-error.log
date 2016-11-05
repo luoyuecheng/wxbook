@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add swig
+
+PATH: 
+  C:\Users\云汐未兮\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\云汐未兮\bin;E:\jdk8\java\bin;E:\jdk8\java\jre\bin;C:\ProgramData\Oracle\Java\javapath;E:\jdk8\java\bin;E:\jdk8\java\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\TortoiseSVN\bin;E:\jdk8\bin;E:\android sdk tools;E:\android sdk tools\platforms;E:\android sdk tools\tools;E:\android sdk tools\platform-tools;C:\Program Files (x86)\Yarn\bin;C:\Ruby23-x64\bin;C:\Users\云汐未兮\AppData\Local\Microsoft\WindowsApps;C:\Users\云汐未兮\AppData\Roaming\npm;C:\Users\云汐未兮\AppData\Local\Yarn\.bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  0.16.1
+
+Node version: 
+  6.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "luoyuecheng",
+    "version": "1.0.0",
+    "description": "wxBook",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "wxBook"
+    ],
+    "author": "luoyuecheng",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.63.173:443
+      at Object.exports._errnoException (util.js:1026:11)
+      at exports._exceptionWithHostPort (util.js:1049:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1081:14)
