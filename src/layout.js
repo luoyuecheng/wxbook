@@ -6,6 +6,7 @@ class Layout extends Component{
   render(){
 
     const content = cloneElement(this.props.children);
+    //console.log(content);
 
     let html = (
       <div className="wrap">

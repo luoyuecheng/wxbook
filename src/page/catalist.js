@@ -35,7 +35,7 @@ class CataList extends Component{
       {
         this.state.list.map((item,i)=>{
           let to = {
-            pathname : `/cata/content/${item.id}`,
+            pathname : `/cata/content/${item.id}?id=${item.id}`,
             id : item.id
           }
           return (

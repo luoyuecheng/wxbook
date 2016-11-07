@@ -8,17 +8,19 @@ class CataContent extends Component{
       list : []
     }
   }
+  //声明周期，当 dom 元素插入到页面后触发
   componentDidMount(){
     let { location } = this.props;
-    console.log('..',location);
+    //console.log('..',this.props);
     let { query } =  location;
+      console.log(1,query);
     const that = this;
     $.get("/cata/content",query,function(res){
-      //console.log(res);
-      if(res.reason == "success"){
+        console.log(3,res);
+      if(res.reason == "Success"){
         that.setState({
           "list" : res.result.data
-        })
+        });
       }
     },"json")
   }
@@ -38,6 +40,7 @@ class CataContent extends Component{
         }
       </ul>
     )
+    console.log(2,html)
     return html;
   }
 }

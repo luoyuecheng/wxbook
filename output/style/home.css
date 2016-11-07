@@ -1,0 +1,29 @@
+*{
+	padding: 0;margin: 0;border: 0;
+}
+
+html{
+	font-size: 15.625vw;
+}
+body{
+	font-size: .32rem;font-family: "微软雅黑"
+}
+
+#header{
+	position: absolute;top: 0;left: 0;right: 0;height: 0.96rem;z-index: 999;background: rgba(0,0,0,0);display: flex;
+}
+#header>div{
+	flex: 1;display: flex;justify-content: center;align-items: center;background: dodgerblue;
+	color: #fff;
+}
+#header h1{
+	font-size: .48rem;font-weight: normal;
+}
+#header .return{
+	position: absolute;top: 0;left: 0;height: 100%;display: flex;align-items: center;
+	font-size: .48rem;width: .80rem;justify-content: center;display: none;
+}
+
+#app{
+	position: fixed;top: .96rem;right: 0;left: 0;bottom: 0;
+}
