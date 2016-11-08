@@ -15,7 +15,7 @@ class Main{
   CataContent(req,res){
     //req.query 地址栏中的 get 形参
     console.log(res)
-    let { id=242,pn=0,rn=30 } = req.query;
+    let { id,pn=0,rn=30 } = req.query;
     //console.log(req.query);
     function callback(error,data){
       res.send(data);

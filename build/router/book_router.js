@@ -41,8 +41,7 @@ var Main = function () {
       //req.query 地址栏中的 get 形参
       console.log(res);
       var _req$query = req.query,
-          _req$query$id = _req$query.id,
-          id = _req$query$id === undefined ? 242 : _req$query$id,
+          id = _req$query.id,
           _req$query$pn = _req$query.pn,
           pn = _req$query$pn === undefined ? 0 : _req$query$pn,
           _req$query$rn = _req$query.rn,

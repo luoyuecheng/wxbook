@@ -7,6 +7,7 @@ import request from "request";
 import { Main } from "./router/book_router";
 new Main(app);
 
+
 Swig.setDefaults({
   cache : false //不缓存文件
 });
