@@ -7,6 +7,15 @@ import request from "request";
 import { Main } from "./router/book_router";
 new Main(app);
 
+//post 请求处理模块
+import bodyParser from "body-parser";
+
+//处理 post 请求，将 post 请求的数据封装为 json
+app.use(bodyParser.urlencoded({
+	extended: false
+}));
+app.use(bodyParser.json())
+
 
 Swig.setDefaults({
   cache : false //不缓存文件
@@ -56,6 +65,7 @@ app.set("views", path.join(__dirname, "../views"));
 //可以直接从浏览器请求这个文件
 //请求文件不能使用.. 需要从根目录开始查找
 app.use(express.static(path.join(__dirname, "../output")))
+app.use(express.static(path.join(__dirname, "../cms")))
 
 //var server = app.listen(9010,function(){
 //var host = server.address().address;

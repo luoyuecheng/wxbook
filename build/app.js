@@ -18,11 +18,24 @@ var _request2 = _interopRequireDefault(_request);
 
 var _book_router = require("./router/book_router");
 
+var _bodyParser = require("body-parser");
+
+var _bodyParser2 = _interopRequireDefault(_bodyParser);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var app = (0, _express2.default)();
 
 new _book_router.Main(app);
+
+//post 请求处理模块
+
+
+//处理 post 请求，将 post 请求的数据封装为 json
+app.use(_bodyParser2.default.urlencoded({
+  extended: false
+}));
+app.use(_bodyParser2.default.json());
 
 _swig2.default.setDefaults({
   cache: false //不缓存文件
@@ -69,6 +82,7 @@ app.set("views", _path2.default.join(__dirname, "../views"));
 //可以直接从浏览器请求这个文件
 //请求文件不能使用.. 需要从根目录开始查找
 app.use(_express2.default.static(_path2.default.join(__dirname, "../output")));
+app.use(_express2.default.static(_path2.default.join(__dirname, "../cms")));
 
 //var server = app.listen(9010,function(){
 //var host = server.address().address;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<title></title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/books/books.css"/>
+
+<script type="text/javascript" src="/lib/angular.min.1.5.js"></script>
+<script type="text/javascript" src="/lib/angular-route.min.js"></script>
+</head>
+<body ng-controller="bookAppCon">
+
+	<div ng-app="bookCmsApp" ng-controller="bookAppCon">
+		<header>
+			<ul class="nav nav-tabs" role="tablist">
+			  <li role="presentation"
+			  	ng-click="tabNav('cata')"
+			  	ng-class="{true:'active'}[bookclass.cata]"
+			  >
+			  	<a href="#/cata">
+			  		文章分类
+			  	</a>
+			  </li>
+			  <li role="presentation"
+			  	ng-click="tabNav('content')"
+			  	ng-class="{true:'active'}[bookclass.content]"
+			  >
+			  	<a href="#/content">
+			  		文章管理
+			  	</a>
+			  </li>
+			</ul>
+		</header>
+		<div ng-view></div>
+	</div>
+
+	<script type="text/javascript" src="/books/main.js"></script>
+
+</body>
+</html>

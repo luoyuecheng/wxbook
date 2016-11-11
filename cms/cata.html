@@ -1,0 +1,26 @@
+<div class="cata-wrap">
+	<ul>
+		<li>分类1</li>
+		<li>分类2</li>
+		<li>分类3</li>
+		<li>分类4</li>
+	</ul>
+	<div class="cata-content">
+		<h3>添加分类</h3>
+		<form role="form" ng-init="cata={}">
+		  <div class="form-group">
+		    <label for="cata-title">标题</label>
+		    <input type="text" class="form-control" id="cata-title" placeholder="填写标题"
+		    	ng-model="cata.title">
+		  </div>
+
+		  <div class="form-group">
+		    <label for="cata-alt">描述</label>
+		    <textarea class="cata-alt" id="cata-alt" ng-model="cata.alt"></textarea>
+		  </div>
+
+		  <button type="submit" class="btn btn-default" ng-click="submitForm()">确认</button>
+		</form>
+	</div>
+			<div>{{ cata }}</div>
+</div>
